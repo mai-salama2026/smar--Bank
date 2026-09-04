@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Dashboard</title> 
+  
+  <link rel="stylesheet" href="css/style.css"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body> 
+
+  <section class="section">
+    <nav class="nav">
+   <div class="container dashboard one">
+    <h1>wellcome</h1>
+<a class="navbar-brand" href="dashboard.html">
+    <img src="images.jpg" alt="Bank Logo" class="bank-logo">
+</a>
+
+<h2><i class="fa fa-wallet"></i>Dashboard</h2>
+<div class="card">
+
+  <h3> Balance:<span id="balance">0</span> $</h3>
+
+</div>
+
+<div class="card">
+
+  <h3> <i class="fa fa-plus"></i>Deposit</h3>
+   <label>Amount</label>
+  <input type="number" id="depositAmount">
+    
+<label>Description</label>
+  <input type="text" id="depositDesc">
+  <button onclick="deposit()">Add</button>
+</div>
+<div class="card">
+
+  <h3><i class="fa fa-minus"></i> Withdraw</h3>
+<label>Amount</label>
+  <input type="number" id="withdrawAmount">
+<label>Description</label>
+  <input type="text" id="withdrawDesc">
+  <button onclick="withdraw()">Taken</button>
+
+</div>
+
+
+<div class="card">
+
+  <h3><i class="fa fa-exchange-alt"></i>Transfer</h3>
+<label>To User Email</label>
+  <input type="email" id="transferTo">
+   <label>Amount</label>
+
+  <input type="number" id="transferAmount">
+<label>Description</label>
+  <input type="text" id="transferDesc">
+  <button onclick="transfer()">Send</button>
+
+</div>
+
+<div id="history"></div>
+
+<div class="card">
+    <h3><i class="fa fa-search"></i> Search</h3>
+
+    <label>Search...</label>
+
+    <input type="text" id="search">
+
+    <button onclick="searchHistory()">Search</button>
+</div>
+
+<button onclick="logout()">Logout</button>
+
+  </div> 
+   <script src="css/app.js"></script>
+   </nav>
+  </section>
+  
+  </body>
+</html>
